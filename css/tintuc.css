@@ -1,0 +1,24 @@
+p{
+    font-family: auto;
+    color: #ed5565;
+    font-size: 25px;
+    margin-top: 70px;
+    float: left;
+}
+
+ul{
+    margin-top:50px ;
+    margin-bottom: 50px;
+    color: #ed5565;
+}
+
+video#lumie {
+    margin-top: 20px;
+    height: 520px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1px;
+    border: 3px solid #ed5565;
+
+}
