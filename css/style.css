@@ -1,0 +1,471 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.wrapper{
+    border: 3px solid #fbfbfd;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+header {
+	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #f1639ad3 10%, #ed5565 100%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+/*CSS MENU*/
+.menu{
+    height: 150px;
+    width: 100%; 
+ 
+}
+
+
+ul.list_menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+ul.list_menu li {
+    margin: 5px;
+    float: left;
+
+}
+
+ul.list_menu li {
+
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: auto;
+    font-size: 20px;
+    color:#5d3ea5;
+
+}
+
+ul.list_menu li a {
+    text-decoration: none;
+}
+
+#main{
+    border: 3px solid #ed5565;
+    height: 100%;
+    width: 100%;    
+}
+
+
+/*CSS SIDEBAR*/
+.sidebar{
+    border: 3px solid #f8f7fa;
+    height: 100%;
+    width: 21%;
+    margin-top: 65px;
+    margin-left: 5px;
+    margin-left: 30px;
+    float: left;
+    font-size: 20px;
+    color:#5d3ea5;
+}
+
+h2 {
+  text-align: center;
+  margin-right: px;
+}
+
+ul.list_sidebar {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.list_sidebar li {
+    margin: 5px;
+    float: left;
+}
+
+ul.list_sidebar li {
+
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: auto;
+}
+
+ul.list_sidebar li a {
+    text-decoration: none;
+}
+
+ul.list_sidebar li:hover {
+    background: #f3b5bb;
+}
+
+ul.list_sidebar li a {
+    display: block;
+    text-align: left;
+}
+
+.maincontent{
+    border: 1px solid #f4f3f5;
+    height: auto;
+    width: 76%;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+}
+
+ul.list_product {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    color: #f3808f;
+}
+
+ul.list_product li {
+    width: 30%;
+    border: 3px solid #f3808f;
+    float: left;
+    margin: 5px;
+    text-align: center;
+
+}
+
+ul.list_product li img {
+    width: 100%;
+}
+
+h3 {
+    color: #5d3ea5;
+    text-align: center;
+}
+body {
+    display: grid;
+    grid-template-rows: 1fr 10rem auto;
+    grid-template-areas: "main" "." "footer";
+    overflow-x: hidden;
+    background: #F5F7FA;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+  }
+  body .footer {
+    z-index: 1;
+    --footer-background:#ED5565;
+    display: grid;
+    position: relative;
+    grid-area: footer;
+    min-height: 12rem;
+  }
+  body .footer .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: var(--footer-background);
+    filter: url("#blob");
+  }
+  body .footer .bubbles .bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: var(--footer-background);
+    border-radius: 100%;
+    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+            animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+  }
+  body .footer .content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 4rem;
+    padding: 2rem;
+    background: var(--footer-background);
+  }
+  body .footer .content a, body .footer .content p {
+    color: #F5F7FA;
+    text-decoration: none;
+  }
+  body .footer .content b {
+    color: white;
+  }
+  body .footer .content p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+  body .footer .content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .footer .content > div > div {
+    margin: 0.25rem 0;
+  }
+  body .footer .content > div > div > * {
+    margin-right: 0.5rem;
+  }
+  body .footer .content > div .image {
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.25rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @-webkit-keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  
+  @keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  @-webkit-keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+  @keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+
+  .footer {
+    width: 100%;
+}
+
+h1.Genshin {
+  font-size: 30px;
+  color: #ED5565;
+  text-align: center;
+}
+
+p {
+  color: red;
+  font-size: 15px;
+  margin-top:50px;
+}
+
+h4 {
+  color: #ED5565;
+}
+.chitiet_sanpham{
+  border: 3px solid #ed5565;
+  height: auto;
+  width: 39%;
+  margin: 0 auto;
+}
+
+#zoomA {
+  /* (A) OPTIONAL DIMENSIONS */
+  width: 39%;
+  height: auto;
+  margin-left: 279px;
+  margin-top: 50px;
+ 
+  /* (B) ANIMATE ZOOM */
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.3s;
+}
+ 
+/* (C) ZOOM ON HOVER */
+#zoomA:hover { transform: scale(1.2); }
+
+
+
+ul{
+  list-style: none;
+}
+
+h2 p {
+  font-size: 30px;
+}
+
+input.themgiohang {
+  color: #fafafa;
+  border: 3px solid #ed5565;
+  background-color: #ED5565;
+  /* border-radius: inherit; */
+  font-size: 20px;
+}
+
+.video-container {
+  margin-top: 20px;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1px;
+  border: 3px solid #ed5565;
+  @media(min-width: 600px) {
+    height: 100vh;
+  }
+}
+
+video {
+  object-fit: cover; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+ul.list_product li a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/*** A E S T H E T I C S ***/
+/***************************/
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 0 1rem;
+  padding: 0;
+  line-height: 1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 5vw;
+  @media (max-width: 400px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 75px;
+  }
+}
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+element.style {
+  text-decoration: none;
+  color: red;
+}
+
+input.timkiem {
+    border: 3px solid #f45b69;;
+    height: 32px;
+    width: 450px;
+    font-size: 18px;
+}
+button.btntimkiem{
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 5px 0;
+  margin-top: 0px;
+  margin-left: 0px;
+  border-radius: 5px;
+  background-color: #f45b69;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+p.giohang{
+  font-family: auto;
+  color: #ed5565;
+  font-size: 30px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.maincontent {
+
+  height: auto;
+  width: 76%;
+  margin-top: 5px;
+  margin-right: 5px;
+  float: right;
+}
+
+p{
+  text-decoration: none;
+}
