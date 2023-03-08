@@ -1,1 +1,0 @@
-<img src="/Website/images/paimonad.jpg" width="180px" height="140px">
